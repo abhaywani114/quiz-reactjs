@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import background from "./assets/images/background.svg"
+
+import './assets/fonts/Peace Sans Webfont.ttf'
+import './assets/fonts/PilkiusRomeus-YwDL.ttf'
+import "./style.css"
+
+import BootScreen from './components/BootScreen'
+
+export default function App() {
+	const [startQuiz, setStartQuiz] = React.useState(false);
+
+    const main_style = {
+        backgroundImage: `url(${background})`
+    };
+
+	return  (
+        <main style={main_style}>
+            {!startQuiz ? <BootScreen/>:<h1>Hi</h1>}
+        </main>
+    )
 }
-
-export default App;

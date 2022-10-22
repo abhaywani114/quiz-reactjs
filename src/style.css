@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Peace-Sans";   /*Can be any text*/
+  src: local("Peace Sans Webfont"),
+    url("./assets/fonts/Peace Sans Webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pilkius-Romeus";   /*Can be any text*/
+  src: local("Pilkius Romeus"),
+    url("./assets/fonts/PilkiusRomeus-YwDL.ttf") format("truetype");
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background-color: #d76ee7;
+	font-family: 'Pilkius-Romeus', sans-serif;
+	color: #fff;
+    overflow: hidden;
+}
+
+
+main {
+	position: relative;
+	/*/justify-content: center;
+	align-items: center;*/
+	background: #f36eeb;
+	width: 1200px;
+	min-height: 100vh;
+	margin: auto;
+	padding: 40px 75px;
+    box-shadow: 0px 2px 8px 2px #956391e8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bootscreen--top-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    font-size: 22px;
+}
+
+.bootscreen--top-bubble-logo {
+    width: auto;
+    height: 85px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.bootscreen--top-bubble-hero-text {
+    font-family: "Peace-sans";
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0px;
+}
+
+
+.bootscreen--bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.bootscreen--bottom-img {
+    height: 400px;
+    width: auto;
+    margin:auto;
+    display: block;
+}
+
+.bootscreen--bottom-inner {
+    position: relative;
+}
+
+.bootscreen--bottom-inner-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+	main {
+		width: 90% !important;
+		padding: 10px 15px;
+		padding-bottom: 40px;
+		min-height: 90vh;
+		margin-top: 1vh;
+	}
+}
