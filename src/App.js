@@ -16,7 +16,7 @@ export default function App() {
     const categories = ["kongehus", "politik", "dvdto", "kendis", "TV", "blandet"];
 
     const main_style = {
-        backgroundImage: `url(${background})`
+//        backgroundImage: `url(${background})`
     };
 
     setTimeout( () => {
@@ -27,12 +27,14 @@ export default function App() {
 
 	return  (
         <main style={main_style}>
-            <BrowserRouter className="App">
-                <Routes>
-                    <Route path="/"  element={firstScreen} exact  />
-                    <Route path="/play/:c" element={<QuizScreen />} />
-                </Routes>
-            </BrowserRouter>
+            <div className="main-background-wrapper">
+                <BrowserRouter className="App">
+                    <Routes>
+                        <Route path="/"  element={firstScreen} exact  />
+                        <Route path="/play/:c" element={<QuizScreen />} />
+                    </Routes>
+                </BrowserRouter>
+            </div>
         </main>
     )
 }
