@@ -7,7 +7,8 @@ import bubble3 from "../assets/images/bubble3.png"
 import bubble4 from "../assets/images/bubble4.png"
 import bubble5 from "../assets/images/bubble5.png"
 
-export default function ({categories, setCatagory}) {
+export default function ({categories, setCatagory, setIsAnswered}) {
+    setIsAnswered(false);
     const bubbleArray = [bubble1, bubble2, bubble3, bubble4, bubble3, bubble5];
     const categoryHTML = categories.map( (category, index) => {
         const img = bubbleArray[index % 5];
