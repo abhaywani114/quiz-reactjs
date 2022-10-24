@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom"
 import backArrow from "../assets/images/arrow_back.svg"
 
-export default function quizScreen() {
+export default function quizScreen({score}) {
     return (
         <>
             <div className="quiz-screen--top-bar">
@@ -14,7 +14,7 @@ export default function quizScreen() {
                     <span className="quiz-screen--top-bar-title">kongehuset</span>
                 </div>
                 <div>
-                    <strong>1/10</strong>
+                    <strong>{score}/10</strong>
                 </div>
             </div>
         </>
