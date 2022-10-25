@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/quiz-reactjs/static/css/main.b2a03a12.css",
-    "main.js": "/quiz-reactjs/static/js/main.29a375cb.js",
+    "main.js": "/quiz-reactjs/static/js/main.95cc8e07.js",
     "static/js/845.680e1590.chunk.js": "/quiz-reactjs/static/js/845.680e1590.chunk.js",
     "static/media/welcome_splash.png": "/quiz-reactjs/static/media/welcome_splash.f0e7b06a781892b479c5.png",
     "static/media/no1.png": "/quiz-reactjs/static/media/no1.ae4f65b60992119d7922.png",
-    "static/media/no3.png": "/quiz-reactjs/static/media/no3.7e8be834e10703071cea.png",
     "static/media/yes1.png": "/quiz-reactjs/static/media/yes1.29b86ddb03d36731ab7e.png",
     "static/media/yes4.png": "/quiz-reactjs/static/media/yes4.f51362e94506f339225e.png",
     "static/media/no2.png": "/quiz-reactjs/static/media/no2.3e79cc832a23028ff839.png",
     "static/media/no4.png": "/quiz-reactjs/static/media/no4.29c004d76bc2932cf171.png",
     "static/media/yes3.png": "/quiz-reactjs/static/media/yes3.d8a3e18d6d1cc2dd0174.png",
     "static/media/Peace Sans Webfont.ttf": "/quiz-reactjs/static/media/Peace Sans Webfont.7406a36b3bb3194a2684.ttf",
+    "static/media/no3.png": "/quiz-reactjs/static/media/no3.17b53822f201236b40b0.png",
     "static/media/right.mp3": "/quiz-reactjs/static/media/right.37646e54d7f377f6a172.mp3",
     "static/media/wrong.mp3": "/quiz-reactjs/static/media/wrong.55119468f0e011dc1c39.mp3",
     "static/media/PilkiusRomeus-YwDL.ttf": "/quiz-reactjs/static/media/PilkiusRomeus-YwDL.cce76137a7c76637bf06.ttf",
@@ -21,11 +21,11 @@
     "index.html": "/quiz-reactjs/index.html",
     "static/media/backgroundBW.svg": "/quiz-reactjs/static/media/backgroundBW.e72096b420b2fd4b976adcdd6a0fd7ab.svg",
     "main.b2a03a12.css.map": "/quiz-reactjs/static/css/main.b2a03a12.css.map",
-    "main.29a375cb.js.map": "/quiz-reactjs/static/js/main.29a375cb.js.map",
+    "main.95cc8e07.js.map": "/quiz-reactjs/static/js/main.95cc8e07.js.map",
     "845.680e1590.chunk.js.map": "/quiz-reactjs/static/js/845.680e1590.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b2a03a12.css",
-    "static/js/main.29a375cb.js"
+    "static/js/main.95cc8e07.js"
   ]
 }
