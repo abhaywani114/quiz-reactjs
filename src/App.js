@@ -41,6 +41,10 @@ export default function App() {
                             isAnswered={isAnswered} />} />
                     </Routes>
                 </BrowserRouter>
+                 <div className="bootscreen--bottom-inner_">
+                    <p className="bootscreen--bottom-inner-text">DET, VI TALER OM</p>
+                </div>
+
             </div>
         </main>
     )

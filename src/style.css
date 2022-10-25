@@ -213,8 +213,8 @@ main {
 
 
 .quiz-screen--yes-no-img {
-    width: auto;
     margin: auto;
+    width: auto;
     height: 500px;
 }
 
@@ -246,7 +246,7 @@ main {
 
     .quiz-screen--option-area {
         transform: translate(-10%, 0px);
-        margin-top: 55px;
+        margin-top: 65px;
     }
 
     .quiz-screen--option-area, .quiz-screen--top-bar, .quiz-screen--question-area {

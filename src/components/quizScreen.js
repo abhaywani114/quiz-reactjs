@@ -4,6 +4,7 @@ import {Link, useParams} from "react-router-dom"
 import QuizScreenTopBar from "./quizScreenTopBar"
 import QuizOptions from "./quizOptions"
 import YesNoImg from './YesNoImg'
+import PlaySound from "./PlaySound"
 import getQuestion from "../service/questionProcessor";
 
 import backArrow from "../assets/images/arrow_back.svg"
@@ -30,6 +31,7 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
     const rightOptionBg = [bubble3R, bubble1R, bubble2R, bubble4R] 
 
     const [isAnswerCorrect, setIsAnswerCorrect] = React.useState(false);
+    const [playAudio, setPlayAudio] = React.useState(false);
     const [score, setScore] = React.useState(0);
     const [quizData, setQuizData] = React.useState([
       {
@@ -64,6 +66,7 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
             });
             
             setIsAnswerCorrect(true);
+            setPlayAudio(t => !t);
              setTimeout( () => {
                 if (score < quizData.length - 1) {
                     setScore(score + 1);
@@ -78,6 +81,7 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
                 return prevState_;
             });
             setIsAnswerCorrect(false);
+            setPlayAudio(t => !t);
         }  
     }
 
@@ -92,6 +96,7 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
                     <QuizOptions optionArray={currentQuestion.options}  optionBg={optionBg} handleClick={selectAnswer}/>
                 </div>
                 <YesNoImg isAnswered={isAnswered} isAnswerCorrect={isAnswerCorrect} />
+                <PlaySound isAnswerCorrect={isAnswerCorrect} playAudio={playAudio}/>
             </div>
         </>
     )
