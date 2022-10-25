@@ -1,10 +1,10 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import {Link, useParams} from "react-router-dom"
 
 import QuizScreenTopBar from "./quizScreenTopBar"
 import QuizOptions from "./quizOptions"
 import YesNoImg from './YesNoImg'
-import quizData from "../data/quizData";
+import getQuestion from "../service/questionProcessor";
 
 import backArrow from "../assets/images/arrow_back.svg"
 import bubble1 from "../assets/images/bubble1.png"
@@ -28,8 +28,29 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
     const [optionBg, setOptionBg] = React.useState(initOptionBg);
     const wrongOptionBg = [bubble3W, bubble1W, bubble2W, bubble4W] 
     const rightOptionBg = [bubble3R, bubble1R, bubble2R, bubble4R] 
+
     const [isAnswerCorrect, setIsAnswerCorrect] = React.useState(false);
     const [score, setScore] = React.useState(0);
+    const [quizData, setQuizData] = React.useState([
+      {
+        "index": 0,
+        "question": "Loading data....",
+        "options": [
+          "------------------------",
+          "------------------------",
+          "------------------------",
+          "------------------------",
+        ],
+        "answer": 0,
+        "category": "--"
+      }
+    ]);
+
+   let params = useParams();
+   React.useEffect( () => {
+       setQuizData(getQuestion(params.c));
+    }, []);
+
     let currentQuestion = quizData[score];
 
     const selectAnswer = (answer) => {
@@ -41,7 +62,15 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
                 prevState_[answer] = rightOptionBg[answer];
                 return prevState_;
             });
+            
             setIsAnswerCorrect(true);
+             setTimeout( () => {
+                if (score < quizData.length - 1) {
+                    setScore(score + 1);
+                    setOptionBg(initOptionBg);
+                    setIsAnswered(false);
+                }
+            }, 2500);
         } else {
             setOptionBg((prevState) => {
                 const prevState_ = [...prevState]
@@ -49,15 +78,9 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
                 return prevState_;
             });
             setIsAnswerCorrect(false);
-        }
+        }  
+    }
 
-        setTimeout( () => {
-            setScore(score + 1);
-            setOptionBg(initOptionBg);
-      //      setCurrentQuestion(data[1]);
-            setIsAnswered(false);
-        }, 3000);
-        }
     return (
         <>
             <QuizScreenTopBar score={score+1} />
