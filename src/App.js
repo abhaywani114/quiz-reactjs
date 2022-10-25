@@ -1,5 +1,5 @@
 import React from "react"
-import {BrowserRouter, Routes , Route}  from "react-router-dom"
+import {HashRouter, BrowserRouter, Routes , Route}  from "react-router-dom"
 
 import BootScreen from './components/BootScreen'
 import CategorySelect from './components/categorySelect';
@@ -26,7 +26,7 @@ export default function App() {
 
     setTimeout( () => {
         setBootscreenActive(false);
-    }, 3500);
+    }, 1500);
 
     let firstScreen =  bootscreenActive ? <BootScreen />:<CategorySelect categories={categories} 
                     setIsAnswered={setIsAnswered} />;
@@ -34,17 +34,14 @@ export default function App() {
 	return  (
         <main style={main_style}>
             <div className="main-background-wrapper" style={wrapper_style}>
-                <BrowserRouter className="App">
+                <HashRouter className="App">
                     <Routes>
                         <Route path="/"  element={firstScreen} exact  />
                         <Route path="/play/:c" element={<QuizScreen setIsAnswered={setIsAnswered} 
                             isAnswered={isAnswered} />} />
                     </Routes>
-                </BrowserRouter>
-                 <div className="bootscreen--bottom-inner_">
-                    <p className="bootscreen--bottom-inner-text">DET, VI TALER OM</p>
-                </div>
-
+                </HashRouter>
+                    <p className="bootscreen--bottom-inner-text" style={{position:'fixed'}}>DET, VI TALER OM</p>
             </div>
         </main>
     )

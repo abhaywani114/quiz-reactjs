@@ -14,7 +14,6 @@ export default function BootScreen() {
             <div className="bootscreen--bottom">
                 <div className="bootscreen--bottom-inner">
                     <img className="bootscreen--bottom-img" src={welcomeSplash} />
-                    <p className="bootscreen--bottom-inner-text">DET, VI TALER OM</p>
                 </div>
             </div>
         </>
