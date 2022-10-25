@@ -1,4 +1,4 @@
-
+import React from "react";
 import {Link}  from "react-router-dom"
 
 import bubble1 from "../assets/images/bubble1.png"
@@ -8,9 +8,12 @@ import bubble4 from "../assets/images/bubble4.png"
 import bubble5 from "../assets/images/bubble5.png"
 
 export default function ({categories, setCatagory, setIsAnswered}) {
-    setIsAnswered(false);
-    const bubbleArray = [bubble1, bubble2, bubble3, bubble4, bubble3, bubble5];
-    const categoryHTML = categories.map( (category, index) => {
+        React.useEffect(() => {
+            setIsAnswered(false);
+        }, []);
+
+        const bubbleArray = [bubble1, bubble2, bubble3, bubble4, bubble3, bubble5];
+        const categoryHTML = categories.map( (category, index) => {
         const img = bubbleArray[index % 5];
 
         let style = {
@@ -23,8 +26,8 @@ export default function ({categories, setCatagory, setIsAnswered}) {
         
         
         return (
-            <Link to={`/play/${category}`}>
-                <div className="category--options" style={style} key={index}>
+            <Link to={`/play/${category}`} key={index}>
+                <div className="category--options" style={style}>
                     <img src={img} /> 
                     <div className="centered_text" style={text_style}>{category}</div>
                 </div>
