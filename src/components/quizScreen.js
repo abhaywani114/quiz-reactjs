@@ -82,6 +82,11 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
             });
             setIsAnswerCorrect(false);
             setPlayAudio(t => !t);
+
+           setTimeout( () => {
+                setOptionBg(initOptionBg);
+                setIsAnswered(false);
+            }, 2500);
         }  
     }
 

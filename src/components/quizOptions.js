@@ -20,12 +20,12 @@ export default function QuizOptions({optionArray, optionBg, handleClick}) {
             break;
         }
 
-        
+       const firstLetter = ["A", "B", "C", "D"]; 
 
         return (
             <div key={index} className="quiz-screen--wrapper " style={style} onClick={() => handleClick(index)}>
                 <img src={img} className="quiz-screen--option-image" />
-                <span className="quiz-screen--option-text" style={text_style}>{o}</span>
+                <span className="quiz-screen--option-text" style={text_style}>{firstLetter[index]}.<br/>{o}</span>
             </div>
         )
     });
