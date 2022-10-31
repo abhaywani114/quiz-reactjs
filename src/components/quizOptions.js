@@ -16,11 +16,13 @@ export default function QuizOptions({optionArray, optionBg, handleClick}) {
             break;
             case 3:
                 style = {...style, 'transform':'translate(50%, -100%)'};
-                text_style = {'top':'45%'}
+                text_style = {'top':'35%'}
             break;
         }
 
-       const firstLetter = ["A", "B", "C", "D"]; 
+        const font_size = 25 - (o.length/5);
+        text_style = {...text_style, fontSize: `${font_size}px`}
+        const firstLetter = ["A", "B", "C", "D"]; 
 
         return (
             <div key={index} className="quiz-screen--wrapper " style={style} onClick={() => handleClick(index)}>
