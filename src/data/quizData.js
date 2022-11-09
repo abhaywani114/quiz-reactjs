@@ -627,7 +627,7 @@ const quizData = [
 	    "Bomuld og uld"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 52,
@@ -638,7 +638,7 @@ const quizData = [
 	    "ames Price og Kathrine Diez"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 53,
@@ -649,7 +649,7 @@ const quizData = [
 	    "Maria Giuliani"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 54,
@@ -660,7 +660,7 @@ const quizData = [
 	    "Bistrot 64"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 55,
@@ -671,7 +671,7 @@ const quizData = [
 	    "Gangbang-fest med Per Seidler og venner"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 56,
@@ -682,7 +682,7 @@ const quizData = [
 	    "Jonas og hans ven fik nok af galskaben og flygtede til fods om natten - og mødte en anden kursusdeltager på samme vej - ud!"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 57,
@@ -693,7 +693,7 @@ const quizData = [
 	    "10"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 58,
@@ -704,7 +704,7 @@ const quizData = [
 	    "Colgate White Ultimate"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 59,
@@ -715,7 +715,7 @@ const quizData = [
 	    "Gucci"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 61,
@@ -726,7 +726,7 @@ const quizData = [
 	    "Ib Schønbergs barnebarn"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "dvdto"
  },
 
 {
@@ -738,7 +738,7 @@ const quizData = [
 	    "Poul Reichhardts barnebarn"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 63,
@@ -749,7 +749,7 @@ const quizData = [
 	    "Peter"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 64,
@@ -760,7 +760,7 @@ const quizData = [
 	    "6 mio. kroner"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 65,
@@ -771,7 +771,7 @@ const quizData = [
 	    "David Bowie (Bowie)"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 66,
@@ -793,7 +793,7 @@ const quizData = [
 	    "Han følte, han var forpligtet til at værd der for sin gamle ven i en svær stund"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 68,
@@ -804,7 +804,7 @@ const quizData = [
 	    "Susse Wold"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 69,
@@ -815,7 +815,7 @@ const quizData = [
 	    "At have drukket alkohol på skolen"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 70,
@@ -826,7 +826,7 @@ const quizData = [
 	    "Mine børnebørn skal til at blive voksne"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 71,
@@ -837,7 +837,7 @@ const quizData = [
 	    "Val d’Isere"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 72,
@@ -848,7 +848,7 @@ const quizData = [
 	    "Mary"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 73,
@@ -859,7 +859,7 @@ const quizData = [
 	    "Dislektese"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "dvdto"
  },
 
 {
@@ -871,7 +871,7 @@ const quizData = [
 	    "106.000.000 kr"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 75,
@@ -882,7 +882,7 @@ const quizData = [
 	    "Parc Monceau"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 76,
@@ -893,7 +893,7 @@ const quizData = [
 	    "Lene Balleby"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "dvdto"
  },
 
 {
@@ -905,7 +905,7 @@ const quizData = [
 	    "Ingrid Jespersen"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "dvdto"
  },
 {
     "index": 78,
