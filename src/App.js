@@ -26,7 +26,7 @@ export default function App() {
 
     setTimeout( () => {
         setBootscreenActive(false);
-    }, 2500);
+    }, 5500);
 
     let firstScreen =  bootscreenActive ? <BootScreen />:<CategorySelect categories={categories} 
                     setIsAnswered={setIsAnswered} />;
