@@ -29,10 +29,13 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
     const [optionBg, setOptionBg] = React.useState(initOptionBg);
     const wrongOptionBg = [bubble3W, bubble1W, bubble2W, bubble4W] 
     const rightOptionBg = [bubble3R, bubble1R, bubble2R, bubble4R] 
+    const yesTimeout = [3000, 2000, 6500, 3000 ];
+    const noTimeout = [5000, 4000, 6000, 3000];
 
     const [isAnswerCorrect, setIsAnswerCorrect] = React.useState(false);
     const [playAudio, setPlayAudio] = React.useState(false);
     const [score, setScore] = React.useState(0);
+    const [randomNumber, setRandomNumber] = React.useState(0);
     const [quizData, setQuizData] = React.useState([
       {
         "index": 0,
@@ -58,6 +61,7 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
     const selectAnswer = (answer) => {
         if (isAnswered) return;
         setIsAnswered(true);
+        setRandomNumber(Math.floor((Math.random() * 4)));
         if (answer === currentQuestion.answer) {
           setOptionBg((prevState) => {
                 const prevState_ = [...prevState]
@@ -73,7 +77,7 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
                     setOptionBg(initOptionBg);
                     setIsAnswered(false);
                 }
-            }, 2500);
+            }, yesTimeout[randomNumber]);
         } else {
             setOptionBg((prevState) => {
                 const prevState_ = [...prevState]
@@ -86,7 +90,7 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
            setTimeout( () => {
                 setOptionBg(initOptionBg);
                 setIsAnswered(false);
-            }, 2500);
+            }, noTimeout[randomNumber]);
         }  
     }
 
@@ -100,8 +104,8 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
                 <div className="quiz-screen--option-area">
                     <QuizOptions optionArray={currentQuestion.options}  optionBg={optionBg} handleClick={selectAnswer}/>
                 </div>
-                <YesNoImg isAnswered={isAnswered} isAnswerCorrect={isAnswerCorrect} />
-                <PlaySound isAnswerCorrect={isAnswerCorrect} playAudio={playAudio}/>
+                <YesNoImg isAnswered={isAnswered} isAnswerCorrect={isAnswerCorrect} playAudio={playAudio}
+                        randomNumber={randomNumber}/>
             </div>
         </>
     )

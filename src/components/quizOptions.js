@@ -20,7 +20,7 @@ export default function QuizOptions({optionArray, optionBg, handleClick}) {
             break;
         }
 
-        const font_size = 25 - (o.length/5);
+        const font_size = 29 - (o.length/5);
         text_style = {...text_style, fontSize: `${font_size}px`}
         const firstLetter = ["A", "B", "C", "D"]; 
 

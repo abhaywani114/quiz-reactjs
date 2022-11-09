@@ -10,13 +10,13 @@ export default function PlaySound({ playAudio, isAnswerCorrect }) {
     const [playSoundRight] = useSound(rightAudio)
 
     React.useEffect( () => {
-        
+/*        
         if (isAnswerCorrect) {
             playSoundRight();
         } else {
             playSoundWrong();
         }
-
+*/
     }, [playAudio]);
 
     return (
