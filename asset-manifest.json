@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/quiz-reactjs/static/css/main.7c6297e7.css",
-    "main.js": "/quiz-reactjs/static/js/main.661e9ae3.js",
+    "main.css": "/quiz-reactjs/static/css/main.1e5bdb7b.css",
+    "main.js": "/quiz-reactjs/static/js/main.ae198989.js",
     "static/js/845.680e1590.chunk.js": "/quiz-reactjs/static/js/845.680e1590.chunk.js",
     "static/media/yes3.wav": "/quiz-reactjs/static/media/yes3.529e50f8168a9d4fed66.wav",
     "static/media/no3.wav": "/quiz-reactjs/static/media/no3.2feb4523256380eac3ac.wav",
     "static/media/no1.wav": "/quiz-reactjs/static/media/no1.845cf2e69d774b4fc08e.wav",
     "static/media/intro.wav": "/quiz-reactjs/static/media/intro.916639be6863f44ab855.wav",
+    "static/media/no2.png": "/quiz-reactjs/static/media/no2.7877bd1fb17108fc19de.png",
     "static/media/no2.wav": "/quiz-reactjs/static/media/no2.c3ad96ee0b27d75961ae.wav",
     "static/media/no4.wav": "/quiz-reactjs/static/media/no4.3090c0ccac0fe7ed504f.wav",
     "static/media/yes4.wav": "/quiz-reactjs/static/media/yes4.7fc93362043793b21532.wav",
     "static/media/welcome_splash.png": "/quiz-reactjs/static/media/welcome_splash.f0e7b06a781892b479c5.png",
     "static/media/yes1.wav": "/quiz-reactjs/static/media/yes1.b713c27c4e2b337d73eb.wav",
+    "static/media/no3.png": "/quiz-reactjs/static/media/no3.5993696a9ac78da4f6b4.png",
     "static/media/yes2.wav": "/quiz-reactjs/static/media/yes2.4030ec828fde3697ab72.wav",
     "static/media/no1.png": "/quiz-reactjs/static/media/no1.ae4f65b60992119d7922.png",
-    "static/media/no3.png": "/quiz-reactjs/static/media/no3.e9d371981d771a1725b8.png",
     "static/media/yes1.png": "/quiz-reactjs/static/media/yes1.29b86ddb03d36731ab7e.png",
     "static/media/yes4.png": "/quiz-reactjs/static/media/yes4.f51362e94506f339225e.png",
-    "static/media/no2.png": "/quiz-reactjs/static/media/no2.3e79cc832a23028ff839.png",
     "static/media/no4.png": "/quiz-reactjs/static/media/no4.29c004d76bc2932cf171.png",
     "static/media/yes3.png": "/quiz-reactjs/static/media/yes3.d8a3e18d6d1cc2dd0174.png",
     "static/media/Peace Sans Webfont.ttf": "/quiz-reactjs/static/media/Peace Sans Webfont.7406a36b3bb3194a2684.ttf",
@@ -26,15 +26,15 @@
     "static/media/PilkiusRomeus-YwDL.ttf": "/quiz-reactjs/static/media/PilkiusRomeus-YwDL.cce76137a7c76637bf06.ttf",
     "static/media/arrow_back.svg": "/quiz-reactjs/static/media/arrow_back.961ebafa35d8f9eb57b4970737eeb12e.svg",
     "static/media/logo_bubbles.svg": "/quiz-reactjs/static/media/logo_bubbles.1610b9933d7a02fef7a86bfcbec7427b.svg",
-    "static/media/background.svg": "/quiz-reactjs/static/media/background.81381224470ea199496c22f73bc4d03c.svg",
+    "static/media/background.svg": "/quiz-reactjs/static/media/background.23935f334c14cb613897ad3e84bb8381.svg",
     "index.html": "/quiz-reactjs/index.html",
-    "static/media/backgroundBW.svg": "/quiz-reactjs/static/media/backgroundBW.e72096b420b2fd4b976adcdd6a0fd7ab.svg",
-    "main.7c6297e7.css.map": "/quiz-reactjs/static/css/main.7c6297e7.css.map",
-    "main.661e9ae3.js.map": "/quiz-reactjs/static/js/main.661e9ae3.js.map",
+    "static/media/backgroundBW.svg": "/quiz-reactjs/static/media/backgroundBW.b2c0e1b03cb17f5174069d752aed356e.svg",
+    "main.1e5bdb7b.css.map": "/quiz-reactjs/static/css/main.1e5bdb7b.css.map",
+    "main.ae198989.js.map": "/quiz-reactjs/static/js/main.ae198989.js.map",
     "845.680e1590.chunk.js.map": "/quiz-reactjs/static/js/845.680e1590.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c6297e7.css",
-    "static/js/main.661e9ae3.js"
+    "static/css/main.1e5bdb7b.css",
+    "static/js/main.ae198989.js"
   ]
 }
