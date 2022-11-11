@@ -3,17 +3,15 @@ import logoBubble from "../assets/images/logo_bubbles.svg"
 import welcomeSplash from "../assets/images/welcome_splash.png"
 import introAudio from "../assets/audio/intro.wav"
 
-export default function BootScreen() {
+export default function BootScreen({activate}) {
 	
 	return (
         <>
-            <audio id="musicplayer" autoPlay muted={false}>
-              <source src={introAudio} />
-            </audio>
             <div className="bootscreen--top-text">
                 <span>Dammarks bedste sladderquiz</span>
                 <img src={logoBubble} className="bootscreen--top-bubble-logo" />
                 <h1 className="bootscreen--top-bubble-hero-text">DET, VI TALER OM</h1>
+                <button onClick={() => activate()} className="start_btn">Start</button>
             </div>
             <div className="bootscreen--bottom">
                 <div className="bootscreen--bottom-inner">

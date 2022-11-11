@@ -38,12 +38,12 @@ main {
 .main-background-wrapper {
 	background:  url("./assets/images/background.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
-    width: 1200px;
+    width: 100%;
     height: 100vh;
-	margin: auto;
-	padding: 40px 75px;
+	margin: auto 0;
+	padding: 40px 0;
 	position: relative;
 }
 
@@ -80,7 +80,7 @@ main {
 }
 
 .bootscreen--bottom-img {
-    height: 400px;
+    height: 330px;
     width: auto;
     margin:auto;
     display: block;
@@ -109,12 +109,12 @@ main {
     margin:auto;
     margin: auto;
     display: grid;
-    margin-top: 45px;
-    transform: translateX(5%);
+    margin-top: -15px;
+    transform: translateX(3%);
 }
 
 .category-screen > a {
-        transform: translateX(5%);
+        transform: translateX(3%);
 }
 
 .category--options {
@@ -174,7 +174,7 @@ main {
 .quiz-screen--question > h1 {
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 1.05em;
     text-align: center;
 }
 
@@ -184,7 +184,7 @@ main {
     display: grid;
     justify-content: center;
     margin-top: 29px;
-    transform: translate(-5%, 1%);
+    transform: translate(-5%, 5%);
 }
 
 .quiz-screen--wrapper {
@@ -199,10 +199,11 @@ main {
     left: 0%;
     color: #000;
     width: 100%;
+    transform: scale(0.85);
 }
 
 .quiz-screen--option-image {
-    width: 190px;
+    width: 160px;
 }
 
 .quiz-screen--yes-no-img-wrapper {
@@ -214,7 +215,7 @@ main {
 .quiz-screen--yes-no-img {
     margin: auto;
     width: auto;
-    height: 500px;
+    height: 430px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -223,11 +224,15 @@ main {
 	}
 
         
+    .quiz-screen--yes-no-img-wrapper {
+        left: 0;
+    }
     .main-background-wrapper {
 		width: 100% !important;
 		padding: 10px 15px;
 		padding-bottom: 40px;
 		margin-top: 0vh;
+        background-size: contain;
     }
 
     .category-screen > a {
@@ -244,7 +249,7 @@ main {
 
     .quiz-screen--option-area {
         transform: translate(-10%, 0px);
-        margin-top: 75px;
+        margin-top: 40px;
     }
 
     .quiz-screen--option-area, .quiz-screen--top-bar, .quiz-screen--question-area {
@@ -261,7 +266,7 @@ main {
     }
 
     .quiz-screen--option-image {
-            width: 190px;
+            width: 200px;
         }
 
     .quiz-screen--option-text {
@@ -275,4 +280,15 @@ main {
 
     .bootscreen--bottom {
     }
+}
+
+.start_btn {
+    font-family: 'Pilkius-Romeus', sans-serif;
+    padding: 15px;
+    background: #d76ee7;
+    border: 1px solid #fff;
+    box-shadow: 0px 1px 9px 0px #ccc;
+    color: #fff;
+    width: 250px;
+    cursor: pointer;
 }

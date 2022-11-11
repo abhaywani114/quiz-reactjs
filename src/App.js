@@ -11,10 +11,12 @@ import './assets/fonts/Peace Sans Webfont.ttf'
 import './assets/fonts/PilkiusRomeus-YwDL.ttf'
 import "./style.css"
 
+import audioIntro from "./assets/audio/intro.wav"
+
 
 export default function App() {
 	const [bootscreenActive, setBootscreenActive] = React.useState(true);
-    const categories = ["kongehus", "politik", "dvdto", "kendis", "TV", "blandet"];
+    const categories = ["kongehus", "politik", "dvto", "kendis", "tv", "blandet"];
     const [isAnswered, setIsAnswered] = React.useState(false);
 
     const wrapper_style = {
@@ -23,12 +25,17 @@ export default function App() {
 
     const main_style = {}
     if (isAnswered) {main_style.background = "#666666";}
-
+/*
     setTimeout( () => {
         setBootscreenActive(false);
     }, 5500);
-
-    let firstScreen =  bootscreenActive ? <BootScreen />:<CategorySelect categories={categories} 
+*/
+    const activate = () => {
+        const audio = new Audio(audioIntro);
+        audio.play();
+        setBootscreenActive(false);
+    }
+    let firstScreen =  bootscreenActive ? <BootScreen activate={activate} />:<CategorySelect categories={categories} 
                     setIsAnswered={setIsAnswered} />;
 
 	return  (

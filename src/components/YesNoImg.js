@@ -23,30 +23,20 @@ import audioYes3 from "../assets/audio/yes3.wav"
 import audioYes4 from "../assets/audio/yes4.wav"
 
 
-export default function YesNoImg({ isAnswered, isAnswerCorrect, playAudio, randomNumber }) {
-    const ImgYes = [ImgYes1, ImgYes2, ImgYes3, ImgYes4];
-    const ImgNo = [ImgNo1, ImgNo2, ImgNo3, ImgNo4];
-
-    const audioYes = [audioYes1, audioYes2, audioYes3, audioYes4];
-    const audioNo = [audioNo1, audioNo2, audioNo3, audioNo4];
+export default function YesNoImg({ isAnswered, isAnswerCorrect, randomNumber}) {
+    const ImgYes = [[ImgYes1, audioYes1] , [ImgYes2, audioYes2], [ImgYes3, audioYes3], [ImgYes4, audioYes4]];
+    const ImgNo = [[ImgNo1, audioNo1], [ImgNo2, audioNo2], [ImgNo3, audioNo3], [ImgNo4, audioNo4]];
 
     const [divStyle, setDivStyle] = React.useState({});
-
-    
     let [displayImg, setDisplayImg] = React.useState('');
-    const [playSound] = useSound(isAnswerCorrect ? audioYes[ randomNumber]:audioNo[randomNumber])
-
     React.useEffect( () => {
-        setDisplayImg(isAnswerCorrect ? ImgYes[ randomNumber]:ImgNo[randomNumber]);
+        setDisplayImg(isAnswerCorrect ? ImgYes[ randomNumber][0]:ImgNo[randomNumber][0]);
+        let audio =   isAnswerCorrect ? ImgYes[randomNumber][1]:ImgNo[randomNumber][1];
         setDivStyle({display: isAnswered ? 'block':'none'});
+        let playA = new Audio(audio);
+        if (isAnswered) { playA.play()};
     }, [isAnswerCorrect, isAnswered]);
    
-    React.useEffect( () => {
-        playSound();    
-    }, [playAudio]);
-
-
-
     return (
             <div style={divStyle} className="quiz-screen--yes-no-img-wrapper">
                 <img src={displayImg} className="quiz-screen--yes-no-img" />

@@ -9,7 +9,7 @@ export default function QuizOptions({optionArray, optionBg, handleClick}) {
 
         switch(index) {
             case 1:
-                style = {...style, 'transform':'translate(59%, -27%)'};
+                style = {...style, 'transform':'translate(59%, -25%)'};
             break;
             case 2:
                 style = {...style, 'transform':'translate(-10%, -55%)'};
@@ -20,8 +20,9 @@ export default function QuizOptions({optionArray, optionBg, handleClick}) {
             break;
         }
 
-        const font_size = 29 - (o.length/9);
-        text_style = {...text_style, fontSize: `${font_size}px`}
+        const font_size = 21 - (o.length/11);
+        const translate = 20 - (o.length/11);
+        text_style = {...text_style, fontSize: `${font_size}px`, transform: `scale(0.85) translateY(${translate}%)`}
         const firstLetter = ["A", "B", "C", "D"]; 
 
         return (

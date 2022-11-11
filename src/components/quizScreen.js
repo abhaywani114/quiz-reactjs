@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, useParams} from "react-router-dom"
+import {Link, useParams, redirect} from "react-router-dom"
 
 import QuizScreenTopBar from "./quizScreenTopBar"
 import QuizOptions from "./quizOptions"
@@ -33,7 +33,6 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
     const noTimeout = [5000, 4000, 6000, 3000];
 
     const [isAnswerCorrect, setIsAnswerCorrect] = React.useState(false);
-    const [playAudio, setPlayAudio] = React.useState(false);
     const [score, setScore] = React.useState(0);
     const [randomNumber, setRandomNumber] = React.useState(0);
     const [quizData, setQuizData] = React.useState([
@@ -70,12 +69,13 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
             });
             
             setIsAnswerCorrect(true);
-            setPlayAudio(t => !t);
              setTimeout( () => {
                 if (score < quizData.length - 1) {
                     setScore(score + 1);
                     setOptionBg(initOptionBg);
                     setIsAnswered(false);
+                } else {
+                    window.location = '/quiz-reactjs';
                 }
             }, yesTimeout[randomNumber]);
         } else {
@@ -85,7 +85,6 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
                 return prevState_;
             });
             setIsAnswerCorrect(false);
-            setPlayAudio(t => !t);
 
            setTimeout( () => {
                 setOptionBg(initOptionBg);
@@ -93,19 +92,22 @@ export default function QuizScreen({isAnswered, setIsAnswered}) {
             }, noTimeout[randomNumber]);
         }  
     }
+        
+    const font_size = 1.5 - (currentQuestion.question.length/9);
+    const text_style = {fontSize: `${font_size}em`}
 
     return (
         <>
-            <QuizScreenTopBar score={score+1} />
+            <QuizScreenTopBar score={score+1} category={params.c} totalQuestion={quizData.length}/>
             <div className="quiz-screen--question-area">
                 <div className="quiz-screen--question">
-                    <h1>{currentQuestion.question}</h1>
+                    <h1 style={text_style} >{currentQuestion.question}</h1>
                 </div>
                 <div className="quiz-screen--option-area">
                     <QuizOptions optionArray={currentQuestion.options}  optionBg={optionBg} handleClick={selectAnswer}/>
                 </div>
-                <YesNoImg isAnswered={isAnswered} isAnswerCorrect={isAnswerCorrect} playAudio={playAudio}
-                        randomNumber={randomNumber}/>
+                <YesNoImg isAnswered={isAnswered} isAnswerCorrect={isAnswerCorrect} 
+                        randomNumber={randomNumber} />
             </div>
         </>
     )
