@@ -203,7 +203,7 @@ main {
 }
 
 .quiz-screen--option-image {
-    width: 160px;
+    width: 150px;
 }
 
 .quiz-screen--yes-no-img-wrapper {
@@ -249,7 +249,7 @@ main {
 
     .quiz-screen--option-area {
         transform: translate(-10%, 0px);
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .quiz-screen--option-area, .quiz-screen--top-bar, .quiz-screen--question-area {
@@ -266,7 +266,7 @@ main {
     }
 
     .quiz-screen--option-image {
-            width: 200px;
+            width: 140px;
         }
 
     .quiz-screen--option-text {

@@ -4,7 +4,6 @@ import {Link, useParams, redirect} from "react-router-dom"
 import QuizScreenTopBar from "./quizScreenTopBar"
 import QuizOptions from "./quizOptions"
 import YesNoImg from './YesNoImg'
-import PlaySound from "./PlaySound"
 import getQuestion from "../service/questionProcessor";
 
 import backArrow from "../assets/images/arrow_back.svg"

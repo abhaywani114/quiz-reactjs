@@ -1,15 +1,15 @@
 import React from "react"
 import useSound from 'use-sound'
 
-import ImgNo1 from "../assets/images/no1.png"
-import ImgNo2 from "../assets/images/no2.png"
-import ImgNo3 from "../assets/images/no3.png"
-import ImgNo4 from "../assets/images/no4.png"
+import ImgNo1 from "../assets/images/no1.webp"
+import ImgNo2 from "../assets/images/no2.webp"
+import ImgNo3 from "../assets/images/no3.webp"
+import ImgNo4 from "../assets/images/no4.webp"
 
-import ImgYes1 from "../assets/images/yes1.png"
-import ImgYes2 from "../assets/images/yes4.png"
-import ImgYes3 from "../assets/images/yes3.png"
-import ImgYes4 from "../assets/images/yes4.png"
+import ImgYes1 from "../assets/images/yes1.webp"
+import ImgYes2 from "../assets/images/yes4.webp"
+import ImgYes3 from "../assets/images/yes3.webp"
+import ImgYes4 from "../assets/images/yes4.webp"
 
 import audioNo1 from "../assets/audio/no1.wav"
 import audioNo2 from "../assets/audio/no2.wav"

@@ -1,6 +1,6 @@
 
 import logoBubble from "../assets/images/logo_bubbles.svg"
-import welcomeSplash from "../assets/images/welcome_splash.png"
+import welcomeSplash from "../assets/images/welcome_splash.webp"
 import introAudio from "../assets/audio/intro.wav"
 
 export default function BootScreen({activate}) {
