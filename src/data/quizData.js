@@ -793,7 +793,7 @@ const quizData = [
 	    "Han følte, han var forpligtet til at værd der for sin gamle ven i en svær stund"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "kongehus"
  },
 {
     "index": 68,
@@ -804,7 +804,7 @@ const quizData = [
 	    "Susse Wold"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "kongehus"
  },
 {
     "index": 69,
@@ -815,7 +815,7 @@ const quizData = [
 	    "At have drukket alkohol på skolen"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "kongehus"
  },
 {
     "index": 70,
@@ -826,7 +826,7 @@ const quizData = [
 	    "Mine børnebørn skal til at blive voksne"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "kongehus"
  },
 {
     "index": 71,
@@ -837,7 +837,7 @@ const quizData = [
 	    "Val d’Isere"
     ],
     "answer": 0,
-    "category": "dvto"
+    "category": "kongehus"
  },
 {
     "index": 72,
@@ -848,7 +848,7 @@ const quizData = [
 	    "Mary"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "kongehus"
  },
 {
     "index": 73,
@@ -859,7 +859,7 @@ const quizData = [
 	    "Dislektese"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "kongehus"
  },
 
 {
@@ -871,7 +871,7 @@ const quizData = [
 	    "106.000.000 kr"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "kongehus"
  },
 {
     "index": 75,
@@ -882,7 +882,7 @@ const quizData = [
 	    "Parc Monceau"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "kongehus"
  },
 {
     "index": 76,
@@ -893,7 +893,7 @@ const quizData = [
 	    "Lene Balleby"
     ],
     "answer": 1,
-    "category": "dvto"
+    "category": "kongehus"
  },
 
 {
@@ -905,7 +905,7 @@ const quizData = [
 	    "Ingrid Jespersen"
     ],
     "answer": 2,
-    "category": "dvto"
+    "category": "kongehus"
  },
 {
     "index": 78,
