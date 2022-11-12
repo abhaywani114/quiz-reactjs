@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/quiz-reactjs/static/css/main.847adcd1.css",
-    "main.js": "/quiz-reactjs/static/js/main.5bd0449f.js",
+    "main.js": "/quiz-reactjs/static/js/main.85785714.js",
     "static/js/845.680e1590.chunk.js": "/quiz-reactjs/static/js/845.680e1590.chunk.js",
     "static/media/yes1.webp": "/quiz-reactjs/static/media/yes1.076c681a8b875339c10f.webp",
     "static/media/no1.webp": "/quiz-reactjs/static/media/no1.84879fcfadf19cd57f5b.webp",
@@ -12,6 +12,7 @@
     "static/media/yes4.webp": "/quiz-reactjs/static/media/yes4.f5cab0e3dacded299480.webp",
     "static/media/no2.webp": "/quiz-reactjs/static/media/no2.a5c10a2bf186e6d9675e.webp",
     "static/media/no3.wav": "/quiz-reactjs/static/media/no3.2017d40dbca8c2133ec1.wav",
+    "static/media/yes2.webp": "/quiz-reactjs/static/media/yes2.fb893c2780c51bcde1eb.webp",
     "static/media/yes3.wav": "/quiz-reactjs/static/media/yes3.0172bf2791246b05810d.wav",
     "static/media/intro.wav": "/quiz-reactjs/static/media/intro.cf311eb250383bfead8d.wav",
     "static/media/Peace Sans Webfont.ttf": "/quiz-reactjs/static/media/Peace Sans Webfont.7406a36b3bb3194a2684.ttf",
@@ -28,11 +29,11 @@
     "index.html": "/quiz-reactjs/index.html",
     "static/media/backgroundBW.svg": "/quiz-reactjs/static/media/backgroundBW.b2c0e1b03cb17f5174069d752aed356e.svg",
     "main.847adcd1.css.map": "/quiz-reactjs/static/css/main.847adcd1.css.map",
-    "main.5bd0449f.js.map": "/quiz-reactjs/static/js/main.5bd0449f.js.map",
+    "main.85785714.js.map": "/quiz-reactjs/static/js/main.85785714.js.map",
     "845.680e1590.chunk.js.map": "/quiz-reactjs/static/js/845.680e1590.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.847adcd1.css",
-    "static/js/main.5bd0449f.js"
+    "static/js/main.85785714.js"
   ]
 }
